@@ -41,3 +41,16 @@ From orwa
 
 
 ffuf-u "https://FUZZ1/" -H "Host: FUZZ2" -H "User-agent: userAgent" -mc all-fc 400-200-wips.txt:FUZZ1-w domains.txt:FUZZ2-of html-o results.html
+
+ffuf \
+    -w wips.txt:FUZZ1 \
+    -w domains.txt:FUZZ2 \
+    -u "https://FUZZ1/" \
+    -H "Host: FUZZ2" \
+    -H "User-Agent: Mozilla/5.0 (Recon-Scanner)" \
+    -mc all \
+    -fc 400-599 \
+    -ac \
+    -t 50 \
+    -of html \
+    -o results.html
