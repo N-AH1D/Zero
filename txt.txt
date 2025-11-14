@@ -32,3 +32,12 @@ cat allurls.txt | gf redirect | openredirex -p /home/coffinxp/openRedirect
 
 @lostsec 
 watch recent video that i uploaded in youtube ❤️
+
+
+
+
+
+From orwa
+
+
+ffuf-u "https://FUZZ1/" -H "Host: FUZZ2" -H "User-agent: userAgent" -mc all-fc 400-200-wips.txt:FUZZ1-w domains.txt:FUZZ2-of html-o results.html
