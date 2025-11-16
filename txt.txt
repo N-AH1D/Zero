@@ -59,3 +59,24 @@ ffuf \
 
 
 katana -u https://target.com -d 4 -c 25 -f qurl,form -headless -p headless -hr 10 -s -jc -kf -si -ef woff,css,svg,png,jpg -em php,asp,aspx,jsp,html,js -match-regex ".*admin.*|.*api.*|.*user.*|.*dashboard.*|.*config.*" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" -H "X-Forwarded-For: 127.0.0.1" -no-sandbox -timeout 20 -delay 1000 -o ultimate_scan.txt
+
+
+
+
+
+katana -u https://target.com \
+-d 5 -c 40 \
+-f qurl,form,url \
+-headless -p headless \
+-jc -kf -s -si \
+-ef woff,css,svg,png,jpg,gif,ico \
+-em php,asp,aspx,jsp,html,js,json \
+-match-regex ".*admin.*|.*login.*|.*api.*|.*user.*|.*dashboard.*|.*config.*|.*dev.*|.*test.*" \
+-H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" \
+-H "X-Forwarded-For: 127.0.0.1" \
+-H "X-Originating-IP: 127.0.0.1" \
+-H "X-Client-IP: 127.0.0.1" \
+-no-sandbox \
+-timeout 20 \
+-delay 500 \
+-o ultimate_katana_scan.txt
