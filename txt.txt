@@ -54,3 +54,8 @@ ffuf \
     -t 50 \
     -of html \
     -o results.html
+
+
+
+
+katana -u https://target.com -d 4 -c 25 -f qurl,form -headless -p headless -hr 10 -s -jc -kf -si -ef woff,css,svg,png,jpg -em php,asp,aspx,jsp,html,js -match-regex ".*admin.*|.*api.*|.*user.*|.*dashboard.*|.*config.*" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" -H "X-Forwarded-For: 127.0.0.1" -no-sandbox -timeout 20 -delay 1000 -o ultimate_scan.txt
