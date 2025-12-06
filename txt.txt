@@ -80,3 +80,16 @@ katana -u https://target.com \
 -timeout 20 \
 -delay 500 \
 -o ultimate_katana_scan.txt
+
+
+Virustotal:
+
+https://www.virustotal.com/vtapi/v2/ip-address/report?apikey=351f850c4812ff153a1cccb558c5faf8f394de868fd23beca330528ebb67c342&ip=104.36.192.134
+
+https://www.virustotal.com/gui/file/1b82738ce7da21e8c1b04a446c285ba87c5fee82f5e23cf76f818b4ea7261a0d
+
+
+https://www.virustotal.com/vtapi/v2/domain/report?apikey=351f850c4812ff153a1cccb558c5faf8f394de868fd23beca330528ebb67c342&domain=kiwi.com
+
+
+https://otx.alienvault.com/api/v1/indicators/{TYPE}/{DOMAIN}/url_list?limit=500
