@@ -93,3 +93,5 @@ https://www.virustotal.com/vtapi/v2/domain/report?apikey=351f850c4812ff153a1cccb
 
 
 https://otx.alienvault.com/api/v1/indicators/{TYPE}/{DOMAIN}/url_list?limit=500
+
+https://github.com/zack0x01/CVE-2025-55182-advanced-scanner-
