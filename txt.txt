@@ -95,3 +95,24 @@ https://www.virustotal.com/vtapi/v2/domain/report?apikey=351f850c4812ff153a1cccb
 https://otx.alienvault.com/api/v1/indicators/{TYPE}/{DOMAIN}/url_list?limit=500
 
 https://github.com/zack0x01/CVE-2025-55182-advanced-scanner-
+
+
+
+
+grep -Eai \
+'(\.zip|\.7z|\.tar|\.gz|\.rar|\.bak|\.old|\.backup|\.sql|\.db|\.sqlite|\.log|\.iso|\.dll|\.exe|
+token=|apikey=|api_key=|access[_-]?token|secret=|password=|passwd=|pwd=|auth=|bearer|
+reset(pass(word)?)?|forgot(pass(word)?)?|change(pass(word)?)?|registration|signup|
+==|%3D%3D|base64|
+@|email=|user(name)?=|
+code=|id=|uid=|uuid=|
+\.php|\.asp|\.aspx|\.ashx|\.jsp|\.cgi|\.do|
+\.xml|\.json|\.yaml|\.yml|\.txt|\.conf|\.env|
+jenkins|sonar|sonarqube|gitlab|grafana|kibana|prometheus|vault|artifactory|nexus|
+admin|dashboard|internal|private|debug|test|dev|staging|
+oauth|sso|saml|openid|callback|redirect|
+upload|download|export|import|
+graphql|graphiql|
+\.git|\.svn|\.hg|
+phpinfo|swagger|openapi)' \
+urls.txt > sensitive_urls.txt
