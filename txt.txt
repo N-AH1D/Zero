@@ -1,4 +1,4 @@
-এইBug Hunting methodology part 2 by Lostsec :)
+Bug Hunting methodology part 2 by Lostsec :)
 ----------------------------------------------------------------------------
 
 subfinder -d viator.com -all  -recursive > subdomain.txt
@@ -108,12 +108,3 @@ naabu -list sub.txt -top-ports 1000 -exclude-ports 80,443 -o file
 naabu-p--list subs.txt -exclude-ports 80,443,8443,21,25,22 -o ports.txt
 
 
-
-
-<strXML>
-<requestList>
-<request>
-<id>1'; WAITFOR DELAY '00:00:05'--</id>
-</request>
-</requestList>
-</strXML>
