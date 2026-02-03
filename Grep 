@@ -1,0 +1,5 @@
+grep -Ei "\.zip|\.7z|\.gz|\.tar|\.dll|\.exe|\.msi|\.iso|token=|apikey=|/resetpassword/|registration|eyj|jwt|==|@|\.env|config|/\.git|\.aspx|\.asp|\.asmx|\.ashx|\.php|\.php3|\.html|\.xhtml|\.xml|\.txt|\.jsf|\.jsp|\.cgi" target.txt
+
+
+
+grep -REi "\.zip|\.7z|\.gz|\.tar|\.dll|\.exe|\.msi|\.iso|token=|apikey=|/resetpassword/|registration|eyj|jwt|==|@|\.env|config|/\.git|\.aspx|\.asp|\.asmx|\.ashx|\.php|\.php3|\.html|\.xhtml|\.xml|\.txt|\.jsf|\.jsp|\.cgi" .
