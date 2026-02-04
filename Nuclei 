@@ -316,3 +316,9 @@ requests:
           - "url_param"
           - "header"
           - "cookie"
+
+
+
+
+
+https://github.com/projectdiscovery/nuclei-templates/blob/ee271cf0eb99d7e90e528d0a45b7dc291c2d7b17/http%2Fvulnerabilities%2Fgeneric%2Fcors-misconfig.yaml
