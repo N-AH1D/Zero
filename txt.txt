@@ -108,3 +108,4 @@ naabu -list sub.txt -top-ports 1000 -exclude-ports 80,443 -o file
 naabu-p--list subs.txt -exclude-ports 80,443,8443,21,25,22 -o ports.txt
 
 
+sqlmap -u "http://example.com/vulnerable.php?id=1" --tamper=random_urlencode
