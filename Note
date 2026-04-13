@@ -28,3 +28,7 @@ https://nav1n0x.gitbook.io/advanced-sql-injection-techniques
 
 
 ádmin@hackerone
+
+
+
+service-now.com AND (Passwd OR password OR PW) NOT example NOT test NOT server.service-now lang:python
