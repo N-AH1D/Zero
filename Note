@@ -32,3 +32,7 @@ https://nav1n0x.gitbook.io/advanced-sql-injection-techniques
 
 
 service-now.com AND (Passwd OR password OR PW) NOT example NOT test NOT server.service-now lang:python
+
+
+
+"domain" AND ("api_key" OR "secret" OR "password" OR "access_token" OR "client_secret" OR "private_key" OR "AWS_SECRET_ACCESS_KEY" OR "DB_PASSWORD" OR "slack_token" OR "github_token" OR "BEGIN RSA PRIVATE KEY")
