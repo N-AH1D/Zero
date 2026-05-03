@@ -36,3 +36,9 @@ service-now.com AND (Passwd OR password OR PW) NOT example NOT test NOT server.s
 
 
 "domain" AND ("api_key" OR "secret" OR "password" OR "access_token" OR "client_secret" OR "private_key" OR "AWS_SECRET_ACCESS_KEY" OR "DB_PASSWORD" OR "slack_token" OR "github_token" OR "BEGIN RSA PRIVATE KEY")
+
+
+
+canary token: http://canarytokens.com/traffic/about/terms/oi8gvuhl3enurh00g05yqnyfj/payments.js
+
+DNS: kplqgniup6l8yal8p2ronc7aa.canarytokens.com
