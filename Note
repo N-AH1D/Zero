@@ -56,3 +56,7 @@ Add for fuzzing the extensions
 ffuf -w /wordlist -u .com/FUZZ -e .md,.db,.txt,.xml,.sql,.7z,.zip,.tar.gz,.env 
 
 it will take some time, but it will be back with very good results♥
+
+
+
+L2V0Yy9wYXNzd2Q=
